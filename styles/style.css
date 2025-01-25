@@ -15,10 +15,10 @@
   --color-hover: #272727; */
 
   --primary-color: #441752;
-  --secondary-color: #EFB6C8;
-  --tertiary-color: #8174A0;
+  --secondary-color: #efb6c8;
+  --tertiary-color: #8174a0;
   --quaternary-color: #fff;
-  --color-hover: #8174A0;
+  --color-hover: #8174a0;
 
   --primary-font: "Krona One", serif;
   --secondary-font: "Montserrat", serif;
@@ -53,6 +53,7 @@ body {
 
 .container {
   /* margin: 10% 15%; */
+  gap: 82px;
   padding: 5% 15%;
   display: flex;
   align-items: center;
@@ -60,7 +61,7 @@ body {
 }
 
 .presentation-content {
-  width: 615px;
+  width: 50%;
   display: flex;
   flex-direction: column;
   gap: 40px;
@@ -94,13 +95,13 @@ body {
   font-size: 1.5rem;
 }
 
-.presentation-links-link {
+.presentation-links-navigation {
   /* background-color: var(--tertiary-color); */
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 16px;
-  width: 280px;
+  width: 50%;
   text-align: center;
   border-radius: 16px;
   font-size: 1.5rem;
@@ -114,7 +115,7 @@ body {
   transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
-.presentation-links-link:hover {
+.presentation-links-navigation:hover {
   background-color: var(--color-hover);
   border: 2px solid var(--quaternary-color);
   transform: scale(1.05);
@@ -127,6 +128,10 @@ body {
 .presentation-content-text-name:hover {
   color: var(--quaternary-color);
   font-weight: bold;
+}
+
+.presentation-image {
+  width: 50%;
 }
 
 .footer {
@@ -152,11 +157,11 @@ body {
 
 .skills-list {
   display: flex;
-  align-items: center; 
-  justify-content: flex-start; 
+  align-items: center;
+  justify-content: flex-start;
 }
 .skills-content {
-  margin-bottom: 16px; 
+  margin-bottom: 16px;
 }
 
 .skills-content:hover {
